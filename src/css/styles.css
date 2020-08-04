@@ -8,6 +8,7 @@
   Rot     #A62C21
   */
 
+/* Global */
 
 body {
   font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
@@ -19,6 +20,15 @@ body {
 * {
   box-sizing: border-box;
 }
+
+/* General */
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
 
 
 /* Navigationsleiste */
@@ -90,7 +100,71 @@ body {
 }
 
 .active {
-  background-color: #A62C21;
+  background-color: #A62C21 !important;
+}
+
+/* Nav Bar Mobile */
+
+.mobile-nav-button {
+  color: #CCC;
+  float: right;
+  font-size: 2rem;
+  border: 2px solid #CCC;
+  width: 37px;
+  height: 37px;
+  position: relative;
+  margin-top: .4rem;
+  right: 5px;
+  margin-bottom: 8px;
+
+}
+
+.mobile-nav-button > span {
+  position: absolute;
+  bottom: -2px;
+  left: 7px;
+
+
+}
+
+.mobile-nav-content > ul > li {
+  display: block;
+  background-color: #3D3F45;
+  height: 50px;
+  padding: 0.7rem 1.2rem;
+  text-align: center;
+}
+
+.mobile-nav-dropdown {
+  display: inline-block;
+  position: relative;
+  float: right;
+}
+
+.mobile-nav-content {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  display: none;
+}
+
+.mobile-nav-dropdown:hover > .mobile-nav-content {
+  display: block;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
 }
 
 /* Header Banner */
@@ -112,7 +186,9 @@ body {
   background-size: contain;
 }
 
-/* Grid System Visability */
+ /*
+
+ Grid System Visability
 
 .border, .border * {
   border: 1px solid #91c4ff;
@@ -129,6 +205,8 @@ p{
   color: #FFF;
   text-align: center;
 }
+
+*/
 
 
 /* Grid System */
@@ -189,8 +267,8 @@ p{
       width: 100%;
     }
 
-    @media (max-width: 480px) {
-      .col-1 {
-        width: 100%;
-      }
+  @media (max-width: 480px) {
+    .col-1 {
+      width: 100%;
+    }
 }
