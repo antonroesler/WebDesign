@@ -534,10 +534,57 @@ section {
 }
 
 
+/* Über uns Section */
 
+#ueber-uns-section {
+  background-color: #FFF;
+}
 
+#ueber-uns-container {
+  position: relative;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+#ueber-uns-container > img {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  height: 100%;
+}
 
+#ueber-uns-container > p {
+  width: 75%;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1440px) {
+  #ueber-uns-container > img {
+    right: 50px;
+  }
+}
+
+@media (max-width: 1280px) {
+  #ueber-uns-container > img {
+    right: 0;
+  }
+}
+
+@media (max-width: 1140px) {
+  #ueber-uns-container > p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #ueber-uns-container > img {
+    display: none;
+  }
+  #ueber-uns-container > p {
+    width: 100%;
+  }
+}
 
 
  /*
