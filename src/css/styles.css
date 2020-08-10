@@ -587,6 +587,44 @@ section {
 }
 
 
+/* Footer */
+
+#footer {
+  background-color: #3D3F45;
+  height: 3rem;
+  color: #F0F0F0;
+}
+
+#footer-nav {
+  display: inline-block;
+  float: right;
+}
+
+#footer-nav > a:link{
+  text-decoration: none;
+  color: #F0F0F0;
+}
+#footer-nav > a:visited{
+  text-decoration: none;
+  color: #F0F0F0;
+  }
+#footer-nav > a:active{
+  text-decoration: none;
+  color: #F0F0F0;
+}
+#footer-nav > a:hover{
+  text-decoration: none;
+  color: #AA1010;
+}
+
+@media (max-width: 768px) {
+  #footer span {
+    display: none;
+  }
+}
+
+
+
  /*
 
  Grid System Visability
