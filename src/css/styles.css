@@ -623,7 +623,139 @@ section {
   }
 }
 
+/* Lesitungen Seite */
 
+.leistung:nth-of-type(2n){
+  background-color: #F0F0F0;
+}
+
+.flex-container{
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1366px) {
+  .flex-container{
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flex-container{
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.flex-container .intro-container{
+  width: 100%;
+}
+
+.leistungs-paket {
+  background-color: #3D3F45;
+  flex-basis: 27%;
+  color: #FFF;
+  padding: 2rem 4rem;
+  text-align: center;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.empfohlenes-leistungs-paket {
+  flex-basis: 30%;
+  min-height: 700px;
+  box-shadow: 0 0 20px 0 #3D3F45;
+  font-size: 1.07rem;
+}
+
+@media (max-width: 1782px) {
+  .leistungs-paket {
+    flex-basis: 30%;
+  }
+
+  .empfohlenes-leistungs-paket {
+    flex-basis: 32.5%;
+
+  }
+}
+
+@media (max-width: 1488px) {
+  .leistungs-paket {
+    padding: 1rem 2rem;
+  }
+
+  .empfohlenes-leistungs-paket {
+    min-height: initial;
+  }
+  .flex-container{
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 1070px) {
+  .flex-container{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .leistungs-paket {
+    min-height: initial;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-container{
+    width:90%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 428px) {
+  .leistungs-paket {
+    padding: 0.5rem 1rem 1rem 1rem; ;
+  }
+}
+
+.leistungs-paket h1 {
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+
+.leistungs-paket ul {
+  padding: 0;
+}
+
+.leistungs-paket ul li {
+  list-style-position: inside;
+  margin-bottom: 0.5rem;
+}
+
+.leistung-paket-btn {
+  width: 50%;
+  height: 2.5rem;
+  font-size: 1rem;
+  margin-top: .5rem;
+  margin-bottom: 1.5rem;
+  min-width: 170px;
+}
+
+.leistung-paket-btn:hover {
+  font-weight: normal;
+}
 
  /*
 
