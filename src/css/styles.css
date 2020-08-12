@@ -757,6 +757,83 @@ section {
   font-weight: normal;
 }
 
+
+/* Nachrichten Section */
+
+#kontakt-formular textarea,
+#kontakt-formular input{
+  width: 100%;
+  border: 2px solid #3D3F45;
+  padding: .75rem;
+  font-size: 1rem;
+  font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+  color: #3D3F45;
+}
+
+#kontakt-formular textarea {
+  height: 100px;
+}
+
+#kontakt-formular textarea:hover,
+#kontakt-formular input:hover,
+#kontakt-formular textarea:focus,
+#kontakt-formular input:focus{
+  border: 2px solid #A62C21;
+}
+
+#kontakt-formular button:hover{
+  border: 2px solid #A62C21;
+  background-color: #A62C21;
+  color: #F0F0F0;
+}
+
+.btn-3{
+  border: 2px solid #3D3F45;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #3D3F45;
+  width: 150px;
+  height: 39px;
+}
+
+
+#kontakt-formular{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (max-width: 1366px) {
+  #kontakt-formular{
+    width: 90%;
+  }
+
+
+}
+
+@media (max-width: 1024px) {
+  #kontakt-formular{
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #kontakt-formular button{
+    width: 100%;
+    border: 2px solid #A62C21;
+    background-color: #A62C21;
+    color: #F0F0F0;
+  }
+
+  #kontakt-formular button:hover{
+    border: 2px solid #A62C21;
+    background-color: #F0F0F0;
+    color: #A62C21;
+  }
+}
+
+
  /*
 
  Grid System Visability
