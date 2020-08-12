@@ -68,6 +68,7 @@ section {
   border: 2px solid #A62C21;
   color: #F0F0F0;
   padding: .4rem .6rem;
+  transition: border .2s ease-in-out;
 }
 
 .btn-1:hover {
@@ -79,12 +80,12 @@ section {
   background-color: transparent;
   color: #FFF;
   padding: .4rem .6rem;
+  transition: color .2s ease-in-out, border-color .2s ease-in-out;
 
 }
 
 .btn-2:hover{
   color: #A62C21;
-  font-weight: bold;
   border-color: #A62C21;
 }
 
@@ -837,6 +838,7 @@ section {
   color: #3D3F45;
   width: 150px;
   height: 39px;
+  transition: border .2s ease-in-out, background-color .5s ease-in-out, color .5s ease-in-out;
 }
 
 
