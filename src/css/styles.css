@@ -89,6 +89,13 @@ section {
   border-color: #A62C21;
 }
 
+.btn-3{
+  border: 2px solid #3D3F45;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #3D3F45;
+  transition: border .2s ease-in-out, background-color .5s ease-in-out, color .5s ease-in-out;
+}
 
 
 /* Navigationsleiste */
@@ -831,14 +838,9 @@ section {
   color: #F0F0F0;
 }
 
-.btn-3{
-  border: 2px solid #3D3F45;
-  background-color: transparent;
-  font-size: 1rem;
-  color: #3D3F45;
+#nachricht-senden-btn{
   width: 150px;
   height: 39px;
-  transition: border .2s ease-in-out, background-color .5s ease-in-out, color .5s ease-in-out;
 }
 
 
