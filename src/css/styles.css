@@ -539,6 +539,11 @@ section {
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
+  transition: transform 1s;
+}
+
+.service-icon:hover {
+  transform: rotateZ(360deg);
 }
 
 #guenstig-icon{
