@@ -419,6 +419,21 @@ section {
 }
 /* Animiertes Logo */
 
+@-webkit-keyframes logo-animation {
+  0% {transform: rotateZ(0deg);}
+  11.111% {transform: rotateZ(0deg);}
+  22.222% {transform: rotateZ(90deg);}
+  33.333% {transform: rotateZ(90deg);}
+  44.444% {transform: rotateZ(180deg);}
+  55.555% {transform: rotateZ(180deg);}
+  66.666% {transform: rotateZ(270deg);}
+  77.777% {transform: rotateZ(270deg);}
+  88.888% {transform: rotateZ(360deg);}
+  100% {transform: rotateZ(360deg);}
+
+
+}
+
 @keyframes logo-animation {
   0% {transform: rotateZ(0deg);}
   11.111% {transform: rotateZ(0deg);}
@@ -451,7 +466,8 @@ section {
   height: 100px;
   margin-left: auto;
   margin-right: auto;
-  animation: logo-animation 5s ease-in-out infinite alternate;
+  -webkit-animation: logo-animation 5s ease-in-out infinite alternate;
+          animation: logo-animation 5s ease-in-out infinite alternate;
 }
 
 @media (max-width: 768px) {
